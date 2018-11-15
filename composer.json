@@ -1,0 +1,22 @@
+{
+    "name": "youbim/",
+    "type": "library",
+    "description": "Youbim is a PHP HTTP client library",
+    "keywords": ["framework", "http", "rest", "web service", "curl", "client", "HTTP client"],
+    "homepage": "http://guzzlephp.org/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Felix Cabrera",
+            "email": "cabreraesqueda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
