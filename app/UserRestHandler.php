@@ -5,7 +5,7 @@ class UserRestHandler extends SimpleRest {
 
 	function getAllUsers() {
 
-		$user = new User();
+		$user = new Usuario();
 		$rawData = $user->getAllUsers();
 
 		if(empty($rawData)) {
@@ -56,7 +56,7 @@ class UserRestHandler extends SimpleRest {
 
 	public function getUser($id) {
 
-		$user = new User();
+		$user = new Usuario();
 		$rawData = $user->getUser($id);
 
 		if(empty($rawData)) {
@@ -83,7 +83,7 @@ class UserRestHandler extends SimpleRest {
 
 	public function store($objUser)
 	{
-		$user = new User();
+		$user = new Usuario();
 		$msg = $user->store($objUser);
 		$data["msg"] = $msg;
 		$data["user"] = $objUser;
@@ -93,7 +93,7 @@ class UserRestHandler extends SimpleRest {
 
 	public function validateUser($objUser)
 	{
-		$user = new User();
+		$user = new Usuario();
 		$msg = $user->validateUser($objUser);
 
 		return $msg;
