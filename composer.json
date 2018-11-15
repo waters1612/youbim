@@ -3,6 +3,7 @@
     "type": "library",
     "description": "Youbim is a PHP HTTP client library",
     "keywords": ["framework", "http", "rest", "web service", "curl", "client", "HTTP client"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Felix Cabrera",
