@@ -1,7 +1,5 @@
 <?php
 
-namespace App;
-
 class Config {
    /**
     * path to the sqlite file

@@ -1,7 +1,5 @@
 <?php
-namespace App;
-require '../vendor/autoload.php';
-
+require_once('UserRestHandler.php');
 
 $view = "";
 if(isset($_GET["view"]))

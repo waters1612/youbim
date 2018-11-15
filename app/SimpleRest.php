@@ -1,5 +1,4 @@
 <?php
-namespace App;
 /*
 A simple RESTful webservices base class
 Use this as a template and build upon it

@@ -1,5 +1,5 @@
 <?php
-namespace App;
+require_once('Config.php');
 
 class SQLiteConnection{
 
@@ -7,7 +7,7 @@ class SQLiteConnection{
 
 	public function __construct()
 	{
-		$this->database = new \SQLite3(Config::PATH_TO_SQLITE_FILE);
+		$this->database = new SQLite3(Config::PATH_TO_SQLITE_FILE);
 		$query = 'CREATE TABLE IF NOT EXISTS usuarios(
 			id INTEGER PRIMARY KEY AUTOINCREMENT,
 			nombre VARCHAR,

@@ -1,5 +1,5 @@
 <?php
-namespace App;
+require_once('SQLiteConnection.php');
 
 class Usuario{
 
@@ -11,15 +11,6 @@ class Usuario{
 
 	public function __construct()
 	{
-		$this->objDB = new SQLiteConnection();
-	}
-
-	public function user($nombre,$apellido,$email,$telefono)
-	{
-		$this->setNombre($nombre);
-		$this->setApellido($apellido);
-		$this->setEmail($email);
-		$this->setTelefono($telefono);
 		$this->objDB = new SQLiteConnection();
 	}
 

@@ -1,5 +1,6 @@
 <?php
-namespace App;
+require_once('SimpleRest.php');
+require_once('Usuario.php');
 
 class UserRestHandler extends SimpleRest {
 
